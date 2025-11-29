@@ -1,0 +1,211 @@
+/* ==========================
+   ESTILOS GENERALES
+=========================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.5;
+}
+
+.cv-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ==========================
+   COLUMNA IZQUIERDA
+=========================== */
+.cv-sidebar {
+    background-color: #222831;
+    color: #eeeeee;
+    padding: 30px 25px;
+}
+
+.profile-photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #393e46;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.name {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.role {
+    text-align: center;
+    font-size: 14px;
+    color: #eeeeeecc;
+    margin-bottom: 20px;
+}
+
+.sidebar-section {
+    margin-bottom: 25px;
+}
+
+.sidebar-section h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #393e46;
+    padding-bottom: 5px;
+}
+
+.sidebar-section ul {
+    list-style: none;
+    margin-top: 8px;
+}
+
+.sidebar-section li {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.contact-item {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.contact-label {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #393e46;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #00adb5;
+}
+
+/* ==========================
+   COLUMNA DERECHA
+=========================== */
+.cv-main {
+    padding: 30px 35px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00adb5;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 5px;
+}
+
+.summary-text {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.item {
+    margin-bottom: 18px;
+}
+
+.item-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.item-subtitle {
+    font-size: 13px;
+    color: #666;
+}
+
+.item-date {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.item-description {
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.item-list {
+    margin-left: 18px;
+    margin-top: 4px;
+}
+
+.item-list li {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+/* Tags de proyectos */
+.tag-list {
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 15px;
+    background-color: #eeeeee;
+}
+
+/* ==========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 900px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .cv-main,
+    .cv-sidebar {
+        padding: 20px;
+    }
+}
